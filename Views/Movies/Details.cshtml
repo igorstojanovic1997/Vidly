@@ -1,0 +1,17 @@
+﻿@using Vidly.Models
+@model Vidly.Models.Movie
+@{
+    var releaseDate = Model.ReleaseDate.HasValue ? Model.ReleaseDate.Value.ToString("D") : Model.ReleaseDate.ToString();
+}
+@{
+    var dateAdded = Model.DateAdded.HasValue ? Model.DateAdded.Value.ToString("D") : Model.DateAdded.ToString();
+}
+
+<h1>@Model.Name</h1>
+
+<li>
+    <ul>Genre: @Model.Genre</ul>
+    <ul>Release Date: @releaseDate</ul>
+    <ul>Date Added: @dateAdded</ul>
+    <ul>Number In Stock: @Model.Stock</ul>
+</li>

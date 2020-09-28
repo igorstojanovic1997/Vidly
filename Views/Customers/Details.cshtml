@@ -1,0 +1,10 @@
+﻿@model Vidly.Models.Customer
+@{
+    var birthDate = Model.BirthDate.HasValue ? Model.BirthDate.Value.ToString("d") : Model.BirthDate.ToString();
+}
+<h1>@Model.Name</h1>
+
+<li>
+    <ul>Membership type: @Model.MembershipType.FeeName</ul>
+    <ul>Birth Date: @birthDate</ul>
+</li>
