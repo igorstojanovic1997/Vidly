@@ -19,7 +19,7 @@ namespace Vidly.Controllers
             _context = new ApplicationDbContext();
 
         }
-
+        //test comment for commit
         protected override void Dispose(bool disposing)
         {
             _context.Dispose();
