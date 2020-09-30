@@ -7,7 +7,7 @@ namespace Vidly.Migrations
     {
         public override void Up()
         {
-            Sql("UPDATE MembershipTypes SET Name = N'No discount' WHERE DurationInMonths = 0");
+            Sql("UPDATE MembershipTypes SET Name = N'No Discount' WHERE DurationInMonths = 0");
         }
         
         public override void Down()

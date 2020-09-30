@@ -125,3 +125,5 @@ C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDateAddedT
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateDateAdded.resources
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddStockToMovies.resources
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateStock.resources
+C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateMembershipTypes.resources
+C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateFeeNames.resources
