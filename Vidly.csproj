@@ -267,6 +267,26 @@
     <Compile Include="Migrations\202009301129419_UpdateFeeNames.Designer.cs">
       <DependentUpon>202009301129419_UpdateFeeNames.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010060935508_AddMovieType.cs" />
+    <Compile Include="Migrations\202010060935508_AddMovieType.Designer.cs">
+      <DependentUpon>202010060935508_AddMovieType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010060936279_PopulateMovieType.cs" />
+    <Compile Include="Migrations\202010060936279_PopulateMovieType.Designer.cs">
+      <DependentUpon>202010060936279_PopulateMovieType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010060951357_UpdateMovieTypes.cs" />
+    <Compile Include="Migrations\202010060951357_UpdateMovieTypes.Designer.cs">
+      <DependentUpon>202010060951357_UpdateMovieTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010060954017_UpdateMovieAddMovieTypeId.cs" />
+    <Compile Include="Migrations\202010060954017_UpdateMovieAddMovieTypeId.Designer.cs">
+      <DependentUpon>202010060954017_UpdateMovieAddMovieTypeId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202010061003340_UpdateMovieChangeMovieTypeId.cs" />
+    <Compile Include="Migrations\202010061003340_UpdateMovieChangeMovieTypeId.Designer.cs">
+      <DependentUpon>202010061003340_UpdateMovieChangeMovieTypeId.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -274,6 +294,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\MovieType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerViewModel.cs" />
@@ -431,6 +452,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009301129419_UpdateFeeNames.resx">
       <DependentUpon>202009301129419_UpdateFeeNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010060935508_AddMovieType.resx">
+      <DependentUpon>202010060935508_AddMovieType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010060936279_PopulateMovieType.resx">
+      <DependentUpon>202010060936279_PopulateMovieType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010060951357_UpdateMovieTypes.resx">
+      <DependentUpon>202010060951357_UpdateMovieTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010060954017_UpdateMovieAddMovieTypeId.resx">
+      <DependentUpon>202010060954017_UpdateMovieAddMovieTypeId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010061003340_UpdateMovieChangeMovieTypeId.resx">
+      <DependentUpon>202010061003340_UpdateMovieChangeMovieTypeId.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

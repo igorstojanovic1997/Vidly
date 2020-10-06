@@ -1,4 +1,3 @@
-C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CoreCompileInputs.cache
 C:\Users\darko\source\repos\Vidly\Vidly\bin\Vidly.dll.config
 C:\Users\darko\source\repos\Vidly\Vidly\bin\Vidly.dll
@@ -127,3 +126,8 @@ C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddStockToMov
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateStock.resources
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateMembershipTypes.resources
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateFeeNames.resources
+C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMovieType.resources
+C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMovieType.resources
+C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateMovieTypes.resources
+C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateMovieAddMovieTypeId.resources
+C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateMovieChangeMovieTypeId.resources

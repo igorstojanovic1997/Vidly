@@ -14,6 +14,10 @@ namespace Vidly.Models
         public DateTime? ReleaseDate { get; set; }
         public DateTime? DateAdded { get; set; }
         public int Stock { get; set; }
+        public MovieType MovieType { get; set; }
+
+        [Display (Name = "Select Genre")]
+        public byte MovieTypeId { get; set; }
         
     }
 }

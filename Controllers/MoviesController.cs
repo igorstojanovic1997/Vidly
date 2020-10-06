@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
+using System.Security.AccessControl;
 using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
@@ -50,7 +52,7 @@ namespace Vidly.Controllers
 
         public ActionResult Index()
         {
-            var movies = _context.Movies.ToList();
+            var movies = _context.Movies.Include(s=>s.MovieType).ToList();
             var viewModel = new MoviesViewModel
             {
                 Movies = movies
@@ -60,19 +62,27 @@ namespace Vidly.Controllers
 
         public ActionResult Details(int id)
         {
-            var movie = _context.Movies.FirstOrDefault(t => t.Id == id);
+            var movie = _context.Movies.Include(s => s.MovieType).FirstOrDefault(t => t.Id == id);
             
             return View(movie);
         }
 
+        [HttpGet]
         public ActionResult New()
         {
+            var movieTypes = _context.MovieTypes.ToList();
+            var viewModel = new NewMovieViewModel()
+            {
+                MovieTypes = movieTypes
+            };
 
-            return View("MovieForm");
+            return View("MovieForm", viewModel);
         }
 
+        
+
         [HttpPost]
-        public ActionResult Add(NewMovieViewModel vm)
+        public ActionResult Add(NewMovieViewModel vm) 
         {
             var movieToAdd = vm.Movie;
 
@@ -84,6 +94,7 @@ namespace Vidly.Controllers
                 TryUpdateModel(movieInDb, "", new string[] { "Name" });
                 movieInDb.Name = movieToAdd.Name;
                 movieInDb.Genre = movieToAdd.Genre;
+                movieInDb.Stock = movieToAdd.Stock;
             }
 
             _context.SaveChanges();
