@@ -8,7 +8,7 @@
 }
 
 <h1>@Model.Name</h1>
-
+@Html.ActionLink("Edit", "Edit", "Movies", new {id = Model.Id}, new {@class = "btn btn-success"})
 <li>
     <ul>Genre: @Model.MovieType.Name</ul>
     <ul>Release Date: @releaseDate</ul>

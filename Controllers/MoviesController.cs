@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Security.AccessControl;
@@ -79,8 +80,6 @@ namespace Vidly.Controllers
             return View("MovieForm", viewModel);
         }
 
-        
-
         [HttpPost]
         public ActionResult Add(NewMovieViewModel vm) 
         {
@@ -99,6 +98,31 @@ namespace Vidly.Controllers
 
             _context.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            var movie = _context.Movies.FirstOrDefault(t => t.Id == id);
+            if (movie == null)
+
+                return HttpNotFound();
+            var viewModel = new NewMovieViewModel
+            {
+                Movie = movie,
+                MovieTypes = _context.MovieTypes.ToList()
+            };
+
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(NewMovieViewModel vm)
+        {
+            var movieToUpdate = vm.Movie;
+            _context.Movies.AddOrUpdate(movieToUpdate);
+            _context.SaveChanges();
+            return RedirectToAction("Details", new {id = movieToUpdate.Id});
         }
     }
 }
