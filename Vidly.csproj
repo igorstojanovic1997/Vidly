@@ -293,6 +293,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
+    <Compile Include="Models\Minimum18Age.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\MovieType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
