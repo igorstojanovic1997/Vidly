@@ -13,5 +13,10 @@ namespace Vidly.Models
         public string Name { get; set; }
         public byte Id { get; set; }
         public string FeeName { get; set; }
+
+        public static readonly byte Unknown = 0;
+        public static readonly byte PayAsYouGo = 1;
+
+
     }
 }
