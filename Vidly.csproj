@@ -287,15 +287,21 @@
     <Compile Include="Migrations\202010061003340_UpdateMovieChangeMovieTypeId.Designer.cs">
       <DependentUpon>202010061003340_UpdateMovieChangeMovieTypeId.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010141025522_AddMovieAnnotations.cs" />
+    <Compile Include="Migrations\202010141025522_AddMovieAnnotations.Designer.cs">
+      <DependentUpon>202010141025522_AddMovieAnnotations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\CustomValidation\MovieStockValidation.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Minimum18Age.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\MovieType.cs" />
+    <Compile Include="Models\CustomValidation\MovieReleaseDateValidation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerViewModel.cs" />
@@ -469,6 +475,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202010061003340_UpdateMovieChangeMovieTypeId.resx">
       <DependentUpon>202010061003340_UpdateMovieChangeMovieTypeId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010141025522_AddMovieAnnotations.resx">
+      <DependentUpon>202010141025522_AddMovieAnnotations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

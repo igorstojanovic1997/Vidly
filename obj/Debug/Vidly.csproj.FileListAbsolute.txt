@@ -132,3 +132,4 @@ C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateMovieTy
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateMovieAddMovieTypeId.resources
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateMovieChangeMovieTypeId.resources
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
+C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMovieAnnotations.resources
