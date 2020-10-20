@@ -133,3 +133,9 @@ C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateMovieAd
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateMovieChangeMovieTypeId.resources
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMovieAnnotations.resources
+C:\Users\darko\source\repos\Vidly\Vidly\bin\System.Net.Http.Formatting.dll
+C:\Users\darko\source\repos\Vidly\Vidly\bin\System.Web.Http.dll
+C:\Users\darko\source\repos\Vidly\Vidly\bin\System.Web.Http.WebHost.dll
+C:\Users\darko\source\repos\Vidly\Vidly\bin\System.Net.Http.Formatting.xml
+C:\Users\darko\source\repos\Vidly\Vidly\bin\System.Web.Http.xml
+C:\Users\darko\source\repos\Vidly\Vidly\bin\System.Web.Http.WebHost.xml

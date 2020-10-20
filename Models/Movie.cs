@@ -18,6 +18,7 @@ namespace Vidly.Models
         public DateTime? ReleaseDate { get; set; }
         public DateTime? DateAdded { get; set; }
         [MovieStockValidation]
+        [Range(1, 20)]
         public int Stock { get; set; }
         public MovieType MovieType { get; set; }
 
