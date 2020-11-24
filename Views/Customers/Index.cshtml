@@ -12,7 +12,7 @@
         <thead>
             <tr>
                 <th>Customer</th>
-                <th>Name</th>
+                <th>Membership Type</th>
                 <th>Delete</th>
             </tr>
         </thead>
@@ -38,7 +38,7 @@
                         }
                     },
                     {
-                        data: "name"
+                        data: "membershipType.name"
                     },
                     {
                         data: "id",
@@ -59,8 +59,6 @@
                             url: "api/customers/" + $(this).attr("data-customer-id"),
                             method: "DELETE",
                             success: function () {
-                                console.log(table);
-                                console.log("rem row");
                                 table.row(button.parents("tr")).remove().draw();
                                 //button.parents("tr").remove();
                             }
