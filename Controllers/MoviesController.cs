@@ -6,7 +6,9 @@ using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Security.AccessControl;
 using System.Web;
+using System.Web.Http;
 using System.Web.Mvc;
+using AutoMapper;
 using Vidly.Models;
 using Vidly.viewModels;
 using Vidly.ViewModels;
@@ -22,6 +24,8 @@ namespace Vidly.Controllers
             _context = new ApplicationDbContext();
         }
 
+       
+
         protected override void Dispose(bool disposing)
         {
             _context.Dispose();
@@ -36,16 +40,12 @@ namespace Vidly.Controllers
             };
 
 
-            var customers = new List<Customer>
-            {
-                new Customer {Name = "John Smith"},
-                new Customer{Name = "Mary Williams" }
-            };
+           
             var ViewModel = new RandomMovieViewModel
             {
 
-                Movie = movie,
-                Customers = customers
+                Movie = movie
+                
             };
             return View(ViewModel);
         }
@@ -53,12 +53,12 @@ namespace Vidly.Controllers
 
         public ActionResult Index()
         {
-            var movies = _context.Movies.Include(s=>s.MovieType).ToList();
-            var viewModel = new MoviesViewModel
-            {
-                Movies = movies
-            };
-            return View(viewModel);
+            //var movies = _context.Movies.Include(s=>s.MovieType).ToList();
+            //var viewModel = new MoviesViewModel
+            //{
+            //    Movies = movies
+            //};
+            return View();
         }
 
         public ActionResult Details(int id)
@@ -68,19 +68,20 @@ namespace Vidly.Controllers
             return View(movie);
         }
 
-        [HttpGet]
+        [System.Web.Mvc.HttpGet]
         public ActionResult New()
         {
             var movieTypes = _context.MovieTypes.ToList();
             var viewModel = new NewMovieViewModel()
             {
+                Movie = new Movie(),
                 MovieTypes = movieTypes
             };
 
             return View("MovieForm", viewModel);
         }
 
-        [HttpPost]
+        [System.Web.Mvc.HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Add(NewMovieViewModel vm) 
         {
@@ -110,7 +111,7 @@ namespace Vidly.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpGet]
+        [System.Web.Mvc.HttpGet]
         public ActionResult Edit(int id)
         {
             var movie = _context.Movies.FirstOrDefault(t => t.Id == id);
@@ -126,7 +127,7 @@ namespace Vidly.Controllers
             return View(viewModel);
         }
 
-        [HttpPost]
+        [System.Web.Mvc.HttpPost]
         public ActionResult Edit(NewMovieViewModel vm)
         {
             var movieToUpdate = vm.Movie;

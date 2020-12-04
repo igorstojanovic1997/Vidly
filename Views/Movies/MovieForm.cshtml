@@ -8,6 +8,9 @@
 <h2>New Movie</h2>
 @using (Html.BeginForm("Add", "Movies"))
 {
+    @Html.HiddenFor(m => m.Movie.Id)
+    @Html.AntiForgeryToken()
+
     <div class="form-group">
         @Html.LabelFor(m => m.Movie.Name)
         @Html.TextBoxFor(m => m.Movie.Name, new { @class = "form-control" })
@@ -15,21 +18,22 @@
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Movie.ReleaseDate)
-        @Html.TextBoxFor(m => m.Movie.ReleaseDate, "{0:d MMM yyyy}", new { @class = "form-control"@*, @type = "date"*@ })
+        @Html.TextBoxFor(m => m.Movie.ReleaseDate, "{0:d MMM yyyy}", new
+        {
+            @class = "form-control"@*, @type = "date"*@})
         @Html.ValidationMessageFor(m => m.Movie.ReleaseDate)
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Movie.MovieTypeId)
         @Html.DropDownListFor(m => m.Movie.MovieTypeId, new SelectList(Model.MovieTypes, "Id", "Name"), "SelectGenre", new { @class = "form-control" })
     </div>
-    @Html.HiddenFor(m => m.Movie.Id)
 
     <div class="form-group">
         @Html.LabelFor(m => m.Movie.Stock)
         @Html.TextBoxFor(m => m.Movie.Stock, new { @class = "form-control", @type = "number" })
         @Html.ValidationMessageFor(m => m.Movie.Stock)
     </div>
-    @Html.AntiForgeryToken()
+
     <button type="submit" class="btn btn-primary">Save</button>
 }
 

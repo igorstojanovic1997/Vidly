@@ -16,7 +16,7 @@ namespace Vidly.Dtos
         public DateTime? ReleaseDate { get; set; }
         public DateTime? DateAdded { get; set; }
         public int Stock { get; set; }
-        public MovieType MovieType { get; set; }
+        public MovieTypeDto MovieType { get; set; }
 
     }
 }
