@@ -6,8 +6,8 @@ using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Security.AccessControl;
 using System.Web;
-using System.Web.Http;
 using System.Web.Mvc;
+using System.Web.Security;
 using AutoMapper;
 using Vidly.Models;
 using Vidly.viewModels;
@@ -50,15 +50,12 @@ namespace Vidly.Controllers
             return View(ViewModel);
         }
 
-
+        
         public ActionResult Index()
         {
-            //var movies = _context.Movies.Include(s=>s.MovieType).ToList();
-            //var viewModel = new MoviesViewModel
-            //{
-            //    Movies = movies
-            //};
-            return View();
+            if (User.IsInRole(RoleName.CanManageMovies))
+                return View("Index");
+            return View("ReadOnlyList");
         }
 
         public ActionResult Details(int id)
@@ -69,6 +66,7 @@ namespace Vidly.Controllers
         }
 
         [System.Web.Mvc.HttpGet]
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult New()
         {
             var movieTypes = _context.MovieTypes.ToList();
