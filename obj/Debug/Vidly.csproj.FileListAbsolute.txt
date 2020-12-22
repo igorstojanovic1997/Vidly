@@ -142,3 +142,4 @@ C:\Users\darko\source\repos\Vidly\Vidly\bin\AutoMapper.dll
 C:\Users\darko\source\repos\Vidly\Vidly\bin\AutoMapper.xml
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.SeedUsers.resources
+C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddPhoneToUserApplication.resources

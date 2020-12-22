@@ -81,6 +81,7 @@ namespace Vidly.Controllers
 
         [System.Web.Mvc.HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult Add(NewMovieViewModel vm) 
         {
             var movieToAdd = vm.Movie;
@@ -110,6 +111,7 @@ namespace Vidly.Controllers
         }
 
         [System.Web.Mvc.HttpGet]
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult Edit(int id)
         {
             var movie = _context.Movies.FirstOrDefault(t => t.Id == id);
@@ -126,6 +128,7 @@ namespace Vidly.Controllers
         }
 
         [System.Web.Mvc.HttpPost]
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult Edit(NewMovieViewModel vm)
         {
             var movieToUpdate = vm.Movie;
