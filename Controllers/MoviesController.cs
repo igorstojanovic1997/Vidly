@@ -9,6 +9,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using AutoMapper;
+using Vidly.Managers;
 using Vidly.Models;
 using Vidly.viewModels;
 using Vidly.ViewModels;
@@ -18,6 +19,9 @@ namespace Vidly.Controllers
     public class MoviesController : Controller
     {
         private ApplicationDbContext _context;
+
+        //private readonly IUserManager _userManager;
+
         // GET: Movies
         public MoviesController()
         {
@@ -39,6 +43,25 @@ namespace Vidly.Controllers
 
             };
 
+            //var um = new UserManager<int>();
+
+            //um.AddOrUpdate(0, 45);
+
+            //var um2 = new UserManager<string>();
+
+
+            //um2.AddOrUpdate(0, "strinhgfgfds");
+
+           // var um3 = new UserManager<Movie>();
+
+            //um3.AddOrUpdate(0, new Movie());
+
+            //var s =um.GetType<Movie>();
+
+            //var c = um.GetType<Customer>();
+
+
+            //_userManager.GetTrimmedUsername("DAs s");
 
            
             var ViewModel = new RandomMovieViewModel
