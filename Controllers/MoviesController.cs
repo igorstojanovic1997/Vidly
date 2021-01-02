@@ -35,43 +35,7 @@ namespace Vidly.Controllers
             _context.Dispose();
         }
 
-        public ActionResult Random()
-        {
-            var movie = new Movie()
-            {
-                Name = "Shrek"
-
-            };
-
-            //var um = new UserManager<int>();
-
-            //um.AddOrUpdate(0, 45);
-
-            //var um2 = new UserManager<string>();
-
-
-            //um2.AddOrUpdate(0, "strinhgfgfds");
-
-           // var um3 = new UserManager<Movie>();
-
-            //um3.AddOrUpdate(0, new Movie());
-
-            //var s =um.GetType<Movie>();
-
-            //var c = um.GetType<Customer>();
-
-
-            //_userManager.GetTrimmedUsername("DAs s");
-
-           
-            var ViewModel = new RandomMovieViewModel
-            {
-
-                Movie = movie
-                
-            };
-            return View(ViewModel);
-        }
+        
 
         
         public ActionResult Index()

@@ -186,6 +186,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\CustomersController.cs" />
     <Compile Include="Controllers\Api\MoviesController.cs" />
+    <Compile Include="Controllers\Api\RentalController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -195,6 +196,7 @@
     <Compile Include="Dtos\MembershipTypeDto.cs" />
     <Compile Include="Dtos\MovieDto.cs" />
     <Compile Include="Dtos\MovieTypeDto.cs" />
+    <Compile Include="Dtos\RentalDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -331,6 +333,10 @@
     <Compile Include="Migrations\202012291312097_UpdateRental.Designer.cs">
       <DependentUpon>202012291312097_UpdateRental.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101021359104_AddCustomerManageRole.cs" />
+    <Compile Include="Migrations\202101021359104_AddCustomerManageRole.Designer.cs">
+      <DependentUpon>202101021359104_AddCustomerManageRole.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -353,6 +359,7 @@
     <Compile Include="ViewModels\NewMovieViewModel.cs" />
     <Compile Include="ViewModels\NewRentalViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
+    <Compile Include="ViewModels\RentalViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -758,6 +765,8 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Customers\ReadOnlyList.cshtml" />
+    <Content Include="Views\Rental\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -866,6 +875,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202012291312097_UpdateRental.resx">
       <DependentUpon>202012291312097_UpdateRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101021359104_AddCustomerManageRole.resx">
+      <DependentUpon>202101021359104_AddCustomerManageRole.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

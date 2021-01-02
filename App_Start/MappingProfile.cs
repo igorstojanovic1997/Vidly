@@ -15,6 +15,7 @@ namespace Vidly.App_Start
             Mapper.CreateMap<Customer, CustomerDto>().ReverseMap();
             Mapper.CreateMap<MembershipType, MembershipTypeDto>();
             Mapper.CreateMap<MovieType, MovieTypeDto>();
+            Mapper.CreateMap<Rental, RentalDto>().ReverseMap();
 
             //Mapper.CreateMap<CustomerDto, Customer>();
             Mapper.CreateMap<Movie, MovieDto>().ReverseMap();

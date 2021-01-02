@@ -144,3 +144,5 @@ C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.SeedUsers.res
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddPhoneToUserApplication.resources
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddRentalTable.resources
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateRental.resources
+C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddCustomerManageRole.resources
+C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
