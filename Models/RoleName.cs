@@ -9,5 +9,7 @@ namespace Vidly.Models
     {
         public const string CanManageMovies = "CanManageMovies";
         public const string CanManageCustomers = "CanManageCustomers";
+        public const string CanManageRentals = "CanManageRentals";
+
     }
 }

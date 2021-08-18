@@ -146,3 +146,4 @@ C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddRentalTabl
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateRental.resources
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddCustomerManageRole.resources
 C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
+C:\Users\darko\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddRoleRentalManage.resources

@@ -337,6 +337,10 @@
     <Compile Include="Migrations\202101021359104_AddCustomerManageRole.Designer.cs">
       <DependentUpon>202101021359104_AddCustomerManageRole.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101061150323_AddRoleRentalManage.cs" />
+    <Compile Include="Migrations\202101061150323_AddRoleRentalManage.Designer.cs">
+      <DependentUpon>202101061150323_AddRoleRentalManage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -767,6 +771,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Customers\ReadOnlyList.cshtml" />
     <Content Include="Views\Rental\Index.cshtml" />
+    <Content Include="Views\Rental\ReadOnlyList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -878,6 +883,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101021359104_AddCustomerManageRole.resx">
       <DependentUpon>202101021359104_AddCustomerManageRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101061150323_AddRoleRentalManage.resx">
+      <DependentUpon>202101061150323_AddRoleRentalManage.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

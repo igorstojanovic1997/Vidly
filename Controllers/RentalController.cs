@@ -21,7 +21,7 @@ namespace Vidly.Controllers
         {
             _context.Dispose();
         }
-
+        [Authorize(Roles = RoleName.CanManageRentals)]
         public ActionResult New()
         {
             var movies = _context.Movies.ToList();
@@ -37,9 +37,14 @@ namespace Vidly.Controllers
 
         public ActionResult Index()
         {
-            return View();
-        }
+            if (User.IsInRole(RoleName.CanManageRentals))
+                return View("Index");
+            else
+                return View("ReadOnlyList");
 
+
+        }
+        [Authorize(Roles = RoleName.CanManageRentals)]
         public ActionResult Save(NewRentalViewModel vm)
         {
             //var rental = vm.Rental;
